@@ -1,0 +1,63 @@
+
+.r{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    top: 50px;
+    left: 500px;
+    z-index: 999;
+}
+.y{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    position: absolute;
+    top: 50px;
+    left: 600px;
+    z-index: 999;
+}
+.b{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: absolute;
+    top: 150px;
+    left: 500px;
+    z-index: 999;
+}
+.g{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    position: absolute;
+    top: 150px;
+    left: 600px;
+    z-index: 999;
+}
+p{
+    position: absolute;
+    top: 120px;
+    left: 590px;
+    font-size: x-large;
+}
+section:hover .r{
+    transform-origin: 0 0;
+    transform: rotate(90deg);
+    transition: 1s;
+}
+section:hover .y{
+    transform-origin:top right;
+    transform: rotate(-90deg);
+    transition: 1s;
+}
+section:hover .b{
+    transform-origin:bottom left;
+    transform: rotate(-90deg);
+    transition: 1s;
+}
+section:hover .g{
+    transform-origin: 100% 100%;
+    transform: rotate(90deg);
+    transition: 1s;
+}
